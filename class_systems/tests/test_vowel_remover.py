@@ -9,3 +9,8 @@ def test_long_sentence_with_punctuation():
     remover = VowelRemover("We will remove the vowels from this sentence.")
     result_no_vowels = remover.remove_vowels()
     assert result_no_vowels == "W wll rmv th vwls frm ths sntnc."
+
+def test_aeiou_returns_empty_string():
+    remover = VowelRemover("aeiou")
+    result_no_vowels = remover.remove_vowels()
+    assert result_no_vowels == ""

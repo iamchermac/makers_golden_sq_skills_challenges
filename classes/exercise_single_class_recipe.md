@@ -143,7 +143,7 @@ Given a name and no task
 def test_list_todo_with_no_tasks():
     criteria = "There are no tasks in the todo list."
     tasks = TaskList("Paint the house")
-    with pytest.raises(Exception) as err
+    with pytest.raises(Exception) as err:
         tasks.list_todo()
     response = str(err.value)
     assert response == criteria

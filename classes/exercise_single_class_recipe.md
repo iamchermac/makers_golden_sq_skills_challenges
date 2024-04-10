@@ -51,6 +51,7 @@ class TaskList:
         #   Nothing
         # Sid-effects
         #   Removes completed tasks from list of tasks
+        pass
 ```
 
 ## 3. Create Examples as Tests

@@ -128,14 +128,14 @@ Given a name and several tasks
 """
 def test_list_todo():
     criteria = {1: 'Buy some paint', 2: 'Buy some rollers', 3: 'Buy a roller pan', 4: 'Mix paint', 5: 'Pour paint into pan'}
-tasks = TaskList("Paint the house")
-tasks.add_todo("Buy some paint")
-tasks.add_todo("Buy some rollers")
-tasks.add_todo("Buy a roller pan")
-tasks.add_todo("Mix paint")
-tasks.add_todo("Pour paint into pan")
-response = tasks.list_todo()
-assert response == criteria
+    tasks = TaskList("Paint the house")
+    tasks.add_todo("Buy some paint")
+    tasks.add_todo("Buy some rollers")
+    tasks.add_todo("Buy a roller pan")
+    tasks.add_todo("Mix paint")
+    tasks.add_todo("Pour paint into pan")
+    response = tasks.list_todo()
+    assert response == criteria
 
 """
 Given a name and no task
@@ -153,7 +153,7 @@ def test_list_todo_with_no_tasks():
 Given an index of a task
 #mark_completed removes the associated task from list of tasks to be completed
 """
-def test_mark_complete():
+def test_mark_completed():
     criteria = {1: 'Buy some paint', 2: 'Buy some rollers', 3: 'Mix paint', 4: 'Pour paint into pan'}
     tasks = TaskList("Paint the house")
     tasks.add_todo("Buy some paint")
